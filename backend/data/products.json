@@ -1,0 +1,258 @@
+[{
+  
+    "name": "iPhone 17 Pro",
+    "price": 150.39,
+    "offPrice": 110.12,
+    "description": "Phone 17 Pro 512 GB: 15.93 cm (6.3″) Display with Promotion up to 120Hz, A19 Pro Chip, Breakthrough Battery Life, Pro Fusion Camera System with Center Stage Front Camera; Cosmic Orange",
+    "ratings": 4.1,
+    "images": [
+      {
+        "image": "https://m.media-amazon.com/images/I/71JGCn1z1TL._SX679_.jpg"
+      },{
+        "image": "https://m.media-amazon.com/images/I/71kjAokz-yL._SX522_.jpg"
+      }
+    ],
+    "category": "Mobile Phones",
+    "offer": "20%",
+    "seller": "Amazon",
+    "stock": 5
+  },
+  {
+    "name": "Samsung Galaxy S25 Ultra",
+    "price": 139.52,
+    "description": "Samsung Galaxy S25 Ultra 5G AI Smartphone (Titanium Gray, 12GB RAM, 256GB Storage), 200MP Camera, S Pen Included, Long Battery Life.",
+    "ratings": 4.3,
+    "images": [
+      {
+        "image": "https://m.media-amazon.com/images/I/71rs4Aer71L._SX679_.jpg"
+      }
+    ],
+    "category": "Mobile Phones",
+    "seller": "Amazon",
+    "stock": 1
+  },
+  {
+    "name": "iPhone 17 Pro",
+    "price": 129.89,
+    "description": "iPhone 17 Pro 256 GB: 15.93 cm (6.3″) Display with Promotion up to 120Hz, A19 Pro Chip, Breakthrough Battery Life, Pro Fusion Camera System with Center Stage Front Camera; Deep Blue",
+    "ratings": 4.1,
+    "images": [
+      {
+        "image": "https://m.media-amazon.com/images/I/618vU2qKXQL._SX679_.jpg"
+      }
+    ],
+    "category": "Mobile Phones",
+    "seller": "Amazon",
+    "stock": 7
+  },
+  {
+    "name": "Samsung Galaxy S25",
+    "price": 110.99,
+    "description": "Samsung Galaxy S25 5G Smartphone with Galaxy AI (Navy, 12GB RAM, 256GB Storage), Snapdragon 8 Elite, 50 MP Camera with ProVisual Engine and 4000mAh Battery",
+    "ratings": 4.5,
+    "images": [
+      {
+        "image": "https://m.media-amazon.com/images/I/61w7JQ+BFOL._SX679_.jpg"
+      }
+    ],
+    "category": "Mobile Phones",
+    "seller": "Amazon",
+    "stock": 7
+  },
+  {
+    "name": "OnePlus 13",
+    "price": 100.89,
+    "description": "OnePlus 13 | Smarter with OnePlus AI | Lifetime Display Warranty |16GB RAM 512GB Storage Midnight Ocean | Official Smartphone for BGMS 2025",
+    "ratings": 4.5,
+    "images": [
+      {
+        "image": "https://m.media-amazon.com/images/I/71N4hshhfNL._SX679_.jpg"
+      }
+    ],
+    "category": "Mobile Phones",
+    "seller": "Flipkart",
+    "stock": 4
+  },
+  {
+    "name": "Apple AirPods 4",
+    "price": 89.00,
+    "description": "Apple AirPods 4 Wireless Earbuds, Bluetooth Headphones, Personalised Spatial Audio, Sweat and Water Resistant, USB-C Charging Case, H2 Chip, Up to 30 Hours of Battery Life, Effortless Setup for iPhone",
+    "ratings": 4.1,
+    "images": [
+      {
+        "image": "https://m.media-amazon.com/images/I/61oCISLE+PL._SX679_.jpg"
+      }
+    ],
+    "category": "Headphones",
+    "seller": "Amazon",
+    "stock": 4
+  },
+  {
+    "name": "OnePlus Nord Buds 2r",
+    "price": 49.89,
+    "description": "OnePlus Nord Buds 2r True Wireless in Ear Earbuds with Mic, 12.4mm Drivers, Playback:Upto 38hr case,4-Mic Design, IP55 Rating [Deep Grey].",
+    "ratings": 4.2,
+    "images": [
+      {
+        "image": "https://m.media-amazon.com/images/I/51oMWaW7tKL._SX679_.jpg"
+      }
+    ],
+    "category": "Headphones",
+    "seller": "Amazon",
+    "stock": 6
+  },
+  {
+    "name": "Samsung Galaxy Buds3 Pro",
+    "price": 69.28,
+    "description": "Samsung Galaxy Buds3 Pro| Silver| Wireless Earbuds| Powered by Galaxy AI| IP57| Active Noise Cancellation| Adaptive Noise Control| 37hrs Battery| 360 Surround Sound| Pinch Controls| Galaxy Ecosystem",
+    "ratings": 3.9,
+    "images": [
+      {
+        "image": "https://m.media-amazon.com/images/I/71ke2BEdIhL._SX679_.jpg"
+      }
+    ],
+    "category": "Headphones",
+    "seller": "Amazon",
+    "stock": 3
+  },
+  {
+    "name": "CMF BY NOTHING Buds Pro",
+    "price": 35.23,
+    "description": "CMF BY NOTHING Buds Pro, True Wireless Earbuds with 45 dB ANC, 39 Hrs Playtime, 10 mm Drivers, Bluetooth 5.3, 6 Mics, IP54, Quick Charge (Dark Grey)",
+    "ratings": 4.0,
+    "images": [
+      {
+        "image": "https://m.media-amazon.com/images/I/71NL2yEJ44L._SX522_.jpg"
+      }
+    ],
+    "category": "Headphones",
+    "seller": "Amazon",
+    "stock": 10
+  },
+  {
+    "name": " MacBook Air",
+    "price": 499.99,
+    "description": "Apple 2025 MacBook Air (13-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 16GB Unified Memory, 512GB) - Midnight",
+    "ratings": 4.6,
+    "images": [
+      {
+        "image": "https://m.media-amazon.com/images/I/71CjP9jmqZL._SX679_.jpg"
+      }
+    ],
+    "category": "Laptops",
+    "seller": "Amazon",
+    "stock": 4
+  },
+  {
+    "name": " MacBook Air",
+    "price": 699.99,
+    "description": "Powered by the most advanced Apple silicon, Mac Studio is the ultimate pro desktop. With massive CPU core updates, mind-bending graphics, increased memory, blazing-fast Thunderbolt 5 connectivity and next-level AI capabilities, Mac Studio is the beast that’s built to deliver.",
+    "ratings": 4.8,
+    "images": [
+      {
+        "image": "https://www.apple.com/v/mac-studio/j/images/overview/hero/static_front__fmvxob6uyxiu_large_2x.jpg"
+      }
+    ],
+    "category": "Headphones",
+    "seller": "Apple Store",
+    "stock": 9
+  },
+  {
+    "name": "ASUS Vivobook 15",
+    "price": 99.00,
+    "description": "ASUS Vivobook 15, Smartchoice, AMD Ryzen 7 5825U, 16GB RAM, 512GB SSD, FHD 15.6, Windows 11, Office Home 2024, Quiet Blue, 1.7Kg, M1502YA-BQ703WS, AMD Radeon iGPU, M365 Basic (1Year), 42Whr Laptop",
+    "ratings": 3.8,
+    "images": [
+      {
+        "image": "https://m.media-amazon.com/images/I/71zMooVIVAL._SX679_.jpg"
+      }
+    ],
+    "category": "Laptops",
+    "seller": "Amazon",
+    "stock": 5
+  },
+  {
+    "name": "Acer",
+    "price": 88.95,
+    "description": "Acer SmartChoice ALG, 13th Gen Intel Core i5-13420H, NVIDIA GeForce RTX 3050-6GB DDR6, 16GB RAM, 512GB SSD, FHD 15.6/39.62 cm, 144Hz, Windows 11 Home, Steel Gray, 1.99 KG, AL15G-53,Gaming Laptop",
+    "ratings": 3.9,
+    "images": [
+      {
+        "image": "https://m.media-amazon.com/images/I/81G1L3nptrL._SX679_.jpg"
+      }
+    ],
+    "category": "Laptops",
+    "seller": "Amazon",
+    "stock": 5
+  },
+  {
+    "name": "ASUS TUF A15",
+    "price": 77.23,
+    "description": "ASUS TUF A15 (2025), AMD Ryzen 7 7445HS, Gaming Laptop(RTX 3050,75W TGP,16GB DDR5(Upgradeable Upto 64GB )512GB SSD,FHD,15.6,144Hz,RGB Keyboard,48Whrs,Windows 11,Graphite Black,2.3 Kg) FA506NCG-HN199W",
+    "ratings": 4.3,
+    "images": [
+      {
+        "image": "https://m.media-amazon.com/images/I/81nPkLHN3vL._SX679_.jpg"
+      }
+    ],
+    "category": "Laptops",
+    "seller": "Amazon",
+    "stock": 6
+  },
+  {
+    "name": "Sony",
+    "price": 65.25,
+    "description": "Sony 139 cm (55 inches) BRAVIA 2M2 Series 4K Ultra HD Smart LED Google TV K-55S25BM2-2 Years Warranty for Limited Period",
+    "ratings": 4.8,
+    "images": [
+      {
+        "image": "https://m.media-amazon.com/images/I/81Vs1ZXn43L._SX522_.jpg"
+      }
+    ],
+    "category": "TV",
+    "seller": "Amazon",
+    "stock": 6
+  },
+  {
+    "name": "LG",
+    "price": 100.21,
+    "description": "LG 164 cm (65 Inches) QNED 8AA Series 4K Ultra HD Smart webOS QNED TV 65QNED8AA6A",
+    "ratings": 3.8,
+    "images": [
+      {
+        "image": "https://m.media-amazon.com/images/I/81E+d3E3IpL._SX522_.jpg"
+      }
+    ],
+    "category": "TV",
+    "seller": "Amazon",
+    "stock": 5
+  },
+  {
+    "name": "Sony",
+    "price": 45.23,
+    "description": "Sony HT-S40R Real 5.1ch Dolby Audio Soundbar for TV with Subwoofer & Wireless Rear Speakers, 5.1ch Home Theatre System (600W, Bluetooth & USB Connectivity, HDMI & Optical Connectivity, Sound Mode)",
+    "ratings": 4.6,
+    "images": [
+      {
+        "image": "https://m.media-amazon.com/images/I/51m4NsZau4L._SX679_.jpg"
+      }
+    ],
+    "category": "Speakers",
+    "seller": "Amazon",
+    "stock": 4
+  },
+  {
+    "name": "boAt",
+    "price": 45.23,
+    "description": "boAt Aavante Prime 5.1 5000DA (2025 Launch), Dolby Atmos, 500W, 5.1CH w/Wired Subwoofer & Wired Satellites, Multi Compatibility, Bluetooth Sound bar, Home Theatre Soundbar Speaker(Premium Black)",
+    "ratings": 3.9,
+    "images": [
+      {
+        "image": "https://m.media-amazon.com/images/I/71frbEdeBzL._SX522_.jpg"
+      }
+    ],
+    "category": "Speakers",
+    "seller": "Amazon",
+    "stock": 6
+  }
+]

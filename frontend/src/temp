@@ -1,0 +1,275 @@
+
+{/*const sendOrderToBackend = async (e) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch("http://localhost:5000/api/customers", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(customer),
+    });
+
+    const data = await response.json();
+
+    if (response.ok) {
+      alert(data.message || "✅ Congratulations! Your order was placed successfully!");
+
+      // ✅ Reset form and cart
+      setCustomer({ name: "", email: "", mobile: "", address: "" });
+      setCart([]);
+      setShowCheckout(false);
+      setOrderPlaced(true);
+
+      // ✅ Automatically refresh after 2 seconds
+      setTimeout(() => {
+        window.location.reload();
+      }, 2000);
+    } else {
+      alert(data.message || "❌ Failed to save data.");
+    }
+  } catch (err) {
+    console.error("❌ Failed to send customer data:", err);
+    alert("❌ Server error. Please try again later.");
+  }
+};
+
+  return (
+    <>
+     
+      <Navbar expand="lg" className={styles.bodytertiary}>
+        <Container>
+          <img className={styles.logo} src={logo} alt="Logo" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ borderColor: "white", filter: "invert(1)" }} />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className={styles.navmain}>
+              <Nav.Link as={Link} to="/">Home</Nav.Link>
+              <Nav.Link onClick={() => setCategory("shirts")}>Shirts</Nav.Link>
+              <Nav.Link onClick={() => setCategory("tshirts")}>T-Shirts</Nav.Link>
+              <Nav.Link onClick={() => setCategory("polos")}>Polos</Nav.Link>
+              <Nav.Link onClick={() => setCategory("jeans")}>Jeans</Nav.Link>
+              <Nav.Link onClick={() => setCategory("hoodies")}>Hoodie</Nav.Link>
+            </Nav>
+
+            <div className={styles.cartIcon}>
+              <FaShoppingCart size={28} />
+              <span className={styles.cartCount}>{cart.length}</span>
+            </div>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+
+      <br /><br />
+
+      {/* Product Cards 
+      <div className={styles.container}>
+        {products[category].map((item) => {
+          const inCart = cart.find((c) => c.id === item.id);
+          return (
+            <div key={item.id} className={styles.card}>
+              <img src={item.image} alt={item.name} className={styles.image} />
+              <h3>{item.name}</h3>
+              <p className={styles.price}>₹{item.price}</p>
+              <p className={styles.offer}>{item.offer}</p>
+              {inCart ? (
+                <div className={styles.qtyControls}>
+                  <button onClick={() => decreaseQty(item.id)}>-</button>
+                  <span>{inCart.quantity}</span>
+                  <button onClick={() => increaseQty(item.id)}>+</button>
+                </div>
+              ) : (
+                <button className={styles.cartBtn} onClick={() => addToCart(item)}>
+                  Add to Cart
+                </button>
+              )}
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Cart Section 
+      {cart.length > 0 && (
+        <div className={styles.cartSection}>
+          <h2>Your Cart</h2>
+          {cart.map((item) => (
+            <div key={item.id} className={styles.cartItem}>
+              <img src={item.image} alt={item.name} className={styles.cartImage} />
+              <div className={styles.cartDetails}>
+                <h4>{item.name}</h4>
+                <p>Price: ₹{item.price}</p>
+                <div className={styles.qtyControls}>
+                  <button onClick={() => decreaseQty(item.id)}>-</button>
+                  <span>{item.quantity}</span>
+                  <button onClick={() => increaseQty(item.id)}>+</button>
+                </div>
+              </div>
+            </div>
+          ))}
+          <h3>
+            Total: ₹
+            {cart.reduce((total, item) => total + item.price * item.quantity, 0)}
+          </h3>
+          <button className={styles.orderBtn} onClick={handleCheckout}>
+            Order Now
+          </button>
+        </div>
+      )}
+
+    
+{showCheckout && (
+  <div className={styles.checkoutForm}>
+    <h2>Enter Delivery & Payment Details</h2>
+
+    <form onSubmit={sendOrderToBackend} className={styles.contactForm}>
+      <div className={styles.formRow}>
+        <input
+          type="text"
+          name="first_name"
+          placeholder="First Name"
+          value={customer.firstName}
+          onChange={(e) => setCustomer({ ...customer, firstName: e.target.value })}
+          required
+        />
+        <input
+          type="text"
+          name="last_name"
+          placeholder="Last Name"
+          value={customer.lastName}
+          onChange={(e) => setCustomer({ ...customer, lastName: e.target.value })}
+          required
+        />
+      </div>
+
+      <div className={styles.formRow}>
+        <input
+          type="text"
+          name="mobile_number"
+          placeholder="Mobile Number"
+          value={customer.mobile}
+          onChange={(e) => setCustomer({ ...customer, mobile: e.target.value })}
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          value={customer.email}
+          onChange={(e) => setCustomer({ ...customer, email: e.target.value })}
+          required
+        />
+      </div>
+
+      <textarea
+        name="address"
+        placeholder="Delivery Address"
+        rows="5"
+        value={customer.address}
+        onChange={(e) => setCustomer({ ...customer, address: e.target.value })}
+        required
+      ></textarea>
+
+      {/* 💳 Payment Section 
+      <div className={styles.paymentSection}>
+        <h3>Payment Method</h3>
+        <div className={styles.paymentOptions}>
+          <label>
+            <input type="radio" name="payment" value="cod" defaultChecked /> Cash on Delivery
+          </label>
+          <label>
+            <input type="radio" name="payment" value="upi" /> UPI / Google Pay
+          </label>
+          <label>
+            <input type="radio" name="payment" value="card" /> Credit / Debit Card
+          </label>
+        </div>
+
+        <div className={styles.cardDetails}>
+          <input type="text" placeholder="Card Number" maxLength="16" />
+          <div className={styles.cardRow}>
+            <input type="text" placeholder="MM/YY" maxLength="5" />
+            <input type="text" placeholder="CVV" maxLength="3" />
+          </div>
+        </div>
+      </div>
+
+      {/* 🧾 Price Details 
+      <div className={styles.priceDetails}>
+        <h3>Price Details</h3>
+        {cart.map((item) => (
+          <div key={item.id} className={styles.priceItem}>
+            <p>
+              {item.name} (x{item.quantity})
+            </p>
+            <p>₹{item.price * item.quantity}</p>
+          </div>
+        ))}
+        <hr />
+        <div className={styles.totalAmount}>
+          <strong>Total Amount:</strong>
+          <strong>
+            ₹{cart.reduce((total, item) => total + item.price * item.quantity, 0)}
+          </strong>
+        </div>
+      </div>
+
+      <button type="submit" className={styles.confirmBtn}>
+        Confirm & Pay
+      </button>
+    </form>
+  </div>
+)}
+
+
+
+
+// server.js
+const express = require("express");
+const mongoose = require("mongoose");
+const cors = require("cors");
+
+const app = express();
+const PORT = 5000;
+
+// Middleware
+app.use(cors());
+app.use(express.json());
+
+// Connect MongoDB
+mongoose
+  .connect("mongodb://localhost:27017/BrigitteProject", {
+    // You can remove these deprecated options now
+  })
+  .then(() => console.log("✅ MongoDB connected successfully"))
+  .catch((err) => console.error("❌ MongoDB connection error:", err));
+
+// Schema
+const customerSchema = new mongoose.Schema({
+  firstName: String,
+  lastName: String,
+  mobile: String,
+  email: String,
+  address: String,
+  createdAt: { type: Date, default: Date.now },
+});
+
+// Model
+const Customer = mongoose.model("Customer", customerSchema);
+
+// Routes
+app.get("/", (req, res) => {
+  res.send("Backend running...");
+});
+
+app.post("/api/customers", async (req, res) => {
+  try {
+    const customerData = new Customer(req.body);
+    await customerData.save(); // 👈 actually saves to MongoDB
+    console.log("✅ Customer data saved:", customerData);
+    res.status(201).json({ message: " ✅ Congratulations your order was placed successfully!" });
+  } catch (err) {
+    console.error("❌ Error saving customer:", err);
+    res.status(500).json({ message: "Server error" });
+  }
+});
+
+// Start Server
+app.listen(PORT, () => console.log(🚀 Server running on http://localhost:${PORT}));*/}
