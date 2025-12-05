@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Search from "./Search";
 import Logo from "../assets/images/logo5.png";
-import logo1 from "../assets/images/logoNew1.png";
+import logo1 from "../assets/images/logonew1.png";
 
 export default function Header({ cartItems = [] }) {
   return (
