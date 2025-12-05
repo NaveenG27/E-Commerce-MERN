@@ -1,22 +1,9 @@
-node_modules/ 
-# Node modules
-node_modules/
+# append the path to .gitignore
+echo "config/config.env" >> .gitignore
 
-# Environment variables
-.env
+# also ensure .env is ignored (already present in your .gitignore, but safe to add)
+echo ".env" >> .gitignore
 
-# Build output
-dist/
-build/
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# IDE settings
-.vscode/
+# stage the updated .gitignore
+git add .gitignore
+git commit -m "Ignore local env files"
